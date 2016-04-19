@@ -71,68 +71,15 @@
                         <li> Download the sample codebase from here - provide link here
                         </li>
                         <li> Import the project into Eclipse.
+                        </li>
+                        <li> Implement the features as listed <a href="features.html" target="_blank">here</a>.
+                        </li>                        
+                        <li> Finish the post participation survey below.
                         </li>                        
                     </ol>
-                </p>
-                <p class="lead">Features</p>
-                <p> Please implement each of the following features one at a time. Before beginning any feature, use any stopwatch and start the timer. During implementation, please keep an eye out for any defects that you might inject. Do not fix the defects when injected, just make a note of the time from the stopwatch. Once you are done implementing the entire featue, use the tool to find defects. If anything is reported, consider this to be defect discovery time and make a note of the time from the stopwatch. Finally, fix the defect and make a note of the time - this is defect fix time. Repeat this for every feature. Note : not all features might inject defects. Use this form to report your findings - provide form link here.
-                </p>
-                <p>Hello Developer! You are the Lead Engineer of a brand new startup that is going to change the world. Like every other startup, a presence on the web is desirable. The founder of the startup has found a template that she likes and wants you to make changes to this template before you can launch your website. Below is a list of changes, show them that you are the best Lead Developer out there!<p>
-                    <ol>
-                        <li> <strong>Change the text! (find these in the HTML and edit directly)</strong>
-                            On the top left of the screen,change the text from “Start Bootstrap” to “Awesome Startup!”<br>
-                            Change the text on the centre of the screen that says “Landing Page” to “Welcome!” and the text that says “A Template by Start Bootstrap” to “To the awesome Startup!”<br>
-                            At the bottom, change the text that says “Connect to Start Bootstrap” to “Connect with Us”.<br>
-                            Finally, change the copyright text at the bottom from “Copyright © Your Company 2014” to “Copyright © Awesome Startup 2016”
-                        </li>
-                        <li> <strong>Change the links!</strong> The links for Twitter, GitHub and LinkedIn are pointing to places we don’t want! Instead, let’s just redirect all those links to my.asu.edu. First, find and remove the links in href for each of these buttons. Add onclick methods to each of these buttons. Next, create a new JavaScript file and include it inside the head tag. (hint : <code>&lt;script src="jsfilename.js"&gt;&lt;/script&gt;</code>) In this new JavaScript file, define the onclick methods called in step b. Add code to open a new window that redirects to https://www.asu.edu. (hint : use window.open("https://www.asu.edu"); )
-                        </li>
-                        <li> <strong>Add a portfolio section!</strong> In the top right of the html page, add a new list item called portfolio. After line 59 in index.html, add the following(copy and paste, and ensure to keep the new lines and indents, you don’t want to be a bad programmer!)
-                            <pre>
-&lt;li&gt;
-    &lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;
-&lt;/li&gt;</pre>
-                            Now, you need to create a new section called portfolio. On  line 171, add the following(again, keep the new lines and indents)
-                            <pre>
-&lt;a name="portfolio"&gt;&lt;/a&gt;
-&lt;div class="content-section-b"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            &lt;p&gt;This is our portfolio!&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>            
-                        </li>
-                        <li> <strong>Add a “See More” button in the portfolio!</strong> In line 176, add the button! Use <code>&lt;a id=”seemore” class="btn btn-default btn-lg"&gt;&lt;span&gt;See More&lt;/span&gt;&lt;/a&gt;</code>
-                        </li>
-                        <li> <strong>On clicking “See More”, add some text in the portfolio section!</strong> Add an onclick method in the button above. Name the method <code>seemoreBtnClick</code>. In your JavaScript file, add method called <code>seeMoreBtnClick</code>.
-                        </li>
-                        <li> <strong>Add some more text in “Portfolio” section!</strong> The see more button doesn’t really do something above. Add some text that is shown once that button is clicked. Add a new p tag below the button in the portfolio section. Give it an id called <code>portfoliodescription</code>. In the method defined in step above, add code that will add some text to the p tag created in step 6a. So, in the method, add the following code :
-<pre>var elem = document.getElementById("portfolioDescription");
-elem.innerHTML = "This is some more description in the portfolio!";
-</pre>
-                        </li>
-                        <li> <strong>Change the text of button whenever it is clicked!</strong> The “See More” button should say “Show Less” when clicked. In the method defined in step 5, get a reference to the “See More” button by using the <code>getElementById</code> method in the document object. Further, get a reference to the span tag and update the innerText of the span tag to say “Show Less”.
-                        </li>
-                        <li> <strong>The font doesn’t look good!</strong> In the portfolio section, the font of the text looks odd and doesn’t fit in with the whole website. Let’s use one of the pre-built fonts and add it to this section. Add the class “lea” to the p tags in the portfolio section. Just change the HTML directly!
-                        </li>
-                        <li> <strong>The background doesn’t look good!</strong> You don’t like the background! The background doesn’t look good! Let’s just go ahead and change it. Open landing-page.css file. Change line 38 from <code>background: url(../img/intro-bg.jpg) no-repeat center center;</code> to <code>background: url(../img/landscape-nature-sunset-trees.jpg) no-repeat center center;</code>
-                        </li>
-                        <li> <strong>Add images to your portfolio!</strong> Add a image to the portfolio section, just below the p tag created in step 6. Use the following code:
-                        <pre>
-&lt;div class="col-lg-5 col-lg-offset-2 col-sm-6"&gt;
-    &lt;img class="img-responsive" src="img/banner-bg.png" alt=""&gt;
-&lt;/div&gt;</pre>
-                        </li>
-                        <li> <strong>Add a Easter Egg!</strong> To the image added in step 10, add an onclick method. Ensure to define the method in the JavaScript file that you had created in step 2. In this method definition, just add an alert method call and pass the text - “You found the Easter Egg!”.
-                        </li>
-                        <li>Add another Easter Egg! If someone is able to find the easter egg that you created in step 11, change the color of the “See More” button. It can be any color that you wish! Just create a new CSS file, include it in your HTML file, create a new class in that CSS file that sets the background color of the button. In the onclick method defined in step 11, get a reference to the “See More” button by using the document object, and simply add the new class that you just created to the button.
-                        </li>
-                    </ol>
-                    That’s it, you’re all done!                    
-                </p>
-                <p class="lead">Post-participation Survey</p>
-                <p> I sincerely thank you for taking out the time to be a part of this study. Please fill the post-participation survey here - provide survey link here. Note : please provided your opinions in the survey about the over all concept. We do understand that Eclipse is may not be everyone's choice for front end development.
+                </p>                
+                <p id="survey" class="lead">Post-participation Survey</p>
+                <p> I sincerely thank you for taking out the time to be a part of this study. Please fill the post-participation survey here - provide survey link here. Note : please provide your opinions in the survey about the over all concept. We do understand that Eclipse may not be everyone's choice for front end development.
                 </p>
 
             </div>            
