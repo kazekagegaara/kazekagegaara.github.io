@@ -37,7 +37,7 @@
                 <input type="button" value="reset" onclick="reset()">
                 <br><br>
                 
-                <p> Please implement each of the following features one at a time. Before beginning any feature, use the stopwatch and start the timer. During implementation, please keep an eye out for any defects that you might inject. Do not fix the defects when injected, just make a note of the time from the stopwatch. Once you are done implementing the entire featue, use the tool to find defects. If anything is reported, consider this to be defect discovery time and make a note of the time from the stopwatch. Finally, fix the defect and make a note of the time - this is defect fix time. Repeat this for every feature. Note : not all features might inject defects. Use this form to report your findings - provide form link here.
+                <p> Please implement each of the following features one at a time. Before beginning any feature, use the stopwatch above and start the timer. During implementation, please keep an eye out for any defects that you might inject. Do not fix the defects when injected, just make a note of the time from the stopwatch. Once you are done implementing the entire featue, use the tool to find defects. If anything is reported, consider this to be defect discovery time and make a note of the time from the stopwatch. Finally, fix the defect and make a note of the time - this is defect fix time. Reset the stopwatch and repeat this for every feature. Note : not all features might inject defects. Use this form to report your findings - <a href="http://goo.gl/forms/lrEE9kSLPm">http://goo.gl/forms/lrEE9kSLPm</a>.
                 </p>
                 <p>Hello Developer! You are the Lead Engineer of a brand new startup that is going to change the world. Like every other startup, a presence on the web is desirable. The founder of the startup has found a template that she likes and wants you to make changes to this template before you can launch your website. Below is a list of changes, show them that you are the best Lead Developer out there!<p>
                     <ol>
@@ -49,12 +49,12 @@
                         </li>
                         <li> <strong>Change the links!</strong> The links for Twitter, GitHub and LinkedIn are pointing to places we don’t want! Instead, let’s just redirect all those links to my.asu.edu. First, find and remove the links in href for each of these buttons. Add onclick methods to each of these buttons. Next, create a new JavaScript file and include it inside the head tag. (hint : <code>&lt;script src="jsfilename.js"&gt;&lt;/script&gt;</code>) In this new JavaScript file, define the onclick methods called in step b. Add code to open a new window that redirects to https://www.asu.edu. (hint : use window.open("https://www.asu.edu"); )
                         </li>
-                        <li> <strong>Add a portfolio section!</strong> In the top right of the html page, add a new list item called portfolio. After line 59 in index.html, add the following(copy and paste, and ensure to keep the new lines and indents, you don’t want to be a bad programmer!)
+                        <li> <strong>Add a portfolio section!</strong> In the top right of the html page, add a new list item called portfolio. After line 55 in index.html, add the following(copy and paste, and ensure to keep the new lines and indents, you don’t want to be a bad programmer!)
                             <pre>
 &lt;li&gt;
     &lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;
 &lt;/li&gt;</pre>
-                            Now, you need to create a new section called portfolio. On  line 171, add the following(again, keep the new lines and indents)
+                            Now, you need to create a new section called portfolio. On  line 166, add the following(again, keep the new lines and indents)
                             <pre>
 &lt;a name="portfolio"&gt;&lt;/a&gt;
 &lt;div class="content-section-b"&gt;
@@ -65,11 +65,11 @@
     &lt;/div&gt;
 &lt;/div&gt;</pre>            
                         </li>
-                        <li> <strong>Add a “See More” button in the portfolio!</strong> In line 176, add the button! Use <code>&lt;a id=”seemore” class="btn btn-default btn-lg"&gt;&lt;span&gt;See More&lt;/span&gt;&lt;/a&gt;</code>
+                        <li> <strong>Add a “See More” button in the portfolio!</strong> In line 172, add the button! Use <code>&lt;a id=”seemore” class="btn btn-default btn-lg"&gt;&lt;span&gt;See More&lt;/span&gt;&lt;/a&gt;</code>
                         </li>
                         <li> <strong>On clicking “See More”, add some text in the portfolio section!</strong> Add an onclick method in the button above. Name the method <code>seemoreBtnClick</code>. In your JavaScript file, add method called <code>seeMoreBtnClick</code>.
                         </li>
-                        <li> <strong>Add some more text in “Portfolio” section!</strong> The see more button doesn’t really do something above. Add some text that is shown once that button is clicked. Add a new p tag below the button in the portfolio section. Give it an id called <code>portfoliodescription</code>. In the method defined in step above, add code that will add some text to the p tag created in step 6a. So, in the method, add the following code :
+                        <li> <strong>Add some more text in “Portfolio” section!</strong> The see more button doesn’t really do something above. Add some text that is shown once that button is clicked. Add a new p tag below the button in the portfolio section. Give it an id called <code>portfoliodescription</code>. In the method defined in step above, add code that will add some text to the p tag created in this step. So, in the method, add the following code :
 <pre>var elem = document.getElementById("portfolioDescription");
 elem.innerHTML = "This is some more description in the portfolio!";
 </pre>
