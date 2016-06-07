@@ -92,7 +92,7 @@ p {
 }
 
 .social a {
-  background: #b0b7bf;
+  background: rgba(176, 183, 191, 0.38);
   width: 36px;
   height: 36px;
   display: inline-block;
